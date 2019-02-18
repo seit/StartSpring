@@ -21,6 +21,8 @@ public class EchoController {
 
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
+	// バリデーションのカスタマイズやバインディング処理のカスタマイズを行う。
+	// 全コントローラに適用したい場合は@ControllerAdviceを使う。
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
 		// @NotNullのバリデーションチェックは、未入力は""(空文字)として扱うため、Nullチェックに引っかからない。
