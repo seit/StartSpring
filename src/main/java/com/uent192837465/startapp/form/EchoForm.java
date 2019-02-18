@@ -9,16 +9,27 @@ public class EchoForm implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@NotNull(message="textは空文字不可です。")
+	@NotNull(message="ユーザ名は空文字不可です。")
 	@Size(max=10)
-	private String text;
+	private String userName;
 
-	public String getText() {
-		return text;
+	@NotNull(message="パスワードは空文字不可です。")
+	private String password;
+
+	public String getPassword() {
+		return password;
 	}
 
-	public void setText(String text) {
-		this.text = text;
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 
 
