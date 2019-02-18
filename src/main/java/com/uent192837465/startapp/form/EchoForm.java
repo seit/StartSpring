@@ -9,7 +9,7 @@ public class EchoForm implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	@NotNull
+	@NotNull(message="textは空文字不可です。")
 	@Size(max=10)
 	private String text;
 
