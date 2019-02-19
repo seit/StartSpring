@@ -5,6 +5,9 @@ import java.io.Serializable;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.uent192837465.startapp.ui.validator.EqualsPropertyValues;
+
+@EqualsPropertyValues(property="userName", comparingProperty="password")
 public class EchoForm implements Serializable {
 
 	private static final long serialVersionUID = 1L;
