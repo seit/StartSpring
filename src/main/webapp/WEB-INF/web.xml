@@ -64,4 +64,13 @@
 			<include-prelude>/WEB-INF/include.jsp</include-prelude>
 		</jsp-property-group>
 	</jsp-config>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/views/error/NotFound.jsp</location>
+	</error-page>
+<!-- 	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/views/error/InternalError.jsp</location>
+	</error-page> -->
 </web-app>
