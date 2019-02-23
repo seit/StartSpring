@@ -65,7 +65,8 @@
 		</jsp-property-group>
 	</jsp-config>
 
-	<error-page>
+	<!-- エラーページの設定 -->
+ 	<error-page>
 		<error-code>404</error-code>
 		<location>/WEB-INF/views/error/NotFound.jsp</location>
 	</error-page>
