@@ -1,4 +1,4 @@
-package com.uent192837465.startapp;
+package com.uent192837465.startapp.controller;
 
 import javax.validation.Valid;
 
